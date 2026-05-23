@@ -16,7 +16,6 @@ Built for:
 - subtitle restoration workflows
 
 ---
-
 # Features
 
 ## OCR Transcription
@@ -35,7 +34,6 @@ Outputs:
 - `.srt`
 
 ---
-
 ## ASR Transcription
 Generate subtitles directly from speech audio using MLX Whisper.
 
@@ -54,7 +52,6 @@ Outputs:
 - `.vtt`
 
 ---
-
 ## Intelligent OCR + ASR Fusion
 Merge OCR subtitles with ASR transcripts using:
 - timestamps
@@ -75,7 +72,6 @@ Outputs:
 - `.vtt`
 
 ---
-
 # Included Scripts
 
 | Script | Purpose |
@@ -85,7 +81,6 @@ Outputs:
 | `ASR+OCR_merger.py` | Merge OCR + ASR intelligently |
 
 ---
-
 # Installation
 
 ## System Dependencies (macOS)
@@ -97,7 +92,6 @@ brew install ffmpeg yt-dlp
 ```
 
 ---
-
 ## Create Virtual Environment
 
 ```bash
@@ -106,7 +100,6 @@ source venv/bin/activate
 ```
 
 ---
-
 ## OCR Dependencies
 
 ```bash
@@ -120,7 +113,6 @@ pip install torch torchvision
 ```
 
 ---
-
 ## ASR Dependencies
 
 ```bash
@@ -132,7 +124,6 @@ pip install mlx-whisper
 # Usage
 
 ---
-
 # OCR Transcriber
 
 Extract hardcoded subtitles from video.
@@ -164,7 +155,6 @@ video.mp4 \
 ```
 
 ---
-
 # OCR Example Output
 
 ```text
@@ -224,7 +214,6 @@ video.mp4 \
 ```
 
 ---
-
 # ASR Example Output
 
 ```text
@@ -247,7 +236,6 @@ video.mp4 \
     - subtitle-specific wording
 
 ---
-
 # OCR + ASR Merger
 
 Fuse OCR subtitles and ASR transcripts together.
@@ -270,7 +258,6 @@ ASR/ASR.json \
 ```
 
 ---
-
 # Merge Example Output
 
 ```text
@@ -293,7 +280,6 @@ ASR/ASR.json \
     - subtitle clarity
 
 ---
-
 # Example Workflow
 
 ## 1. OCR hardcoded subtitles
@@ -317,7 +303,6 @@ ASR.json
 ```
 
 ---
-
 # Why OCR + ASR?
 
 ASR and OCR each have different strengths.
@@ -330,14 +315,12 @@ ASR and OCR each have different strengths.
 Combining both systems often produces better subtitles than either alone.
 
 ---
-
 # Use Cases
 
 ## Restore Hardcoded Subtitles
 Recover subtitles from videos with burned-in captions.
 
 ---
-
 ## Improve ASR Accuracy
 Use OCR to correct:
 - names
@@ -357,7 +340,6 @@ Generate subtitles for:
 - livestreams
 
 ---
-
 ## Traditional Chinese Subtitle Workflows
 Useful for:
 - Taiwanese YouTube
@@ -365,7 +347,6 @@ Useful for:
 - mixed Chinese/English subtitles
 
 ---
-
 ## Local-First Subtitle Generation
 No cloud APIs required.
 
@@ -375,7 +356,6 @@ Runs locally using:
 - FFmpeg
 
 ---
-
 # Notes
 
 - First EasyOCR run downloads OCR models
@@ -385,7 +365,6 @@ Runs locally using:
 - Low-resolution video may still produce OCR artifacts
 
 ---
-
 # Future Ideas
 
 Potential future additions:
@@ -400,9 +379,5 @@ Potential future additions:
 ---
 
 # License
-
 MIT License
 
-# License
-
-MIT License
